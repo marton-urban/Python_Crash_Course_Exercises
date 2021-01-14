@@ -1,0 +1,68 @@
+Pycharm:
+
+alt+enter
+shift+f10
+
+ctrl+f(file) ctrl+shift+f(entire project) doubleshit(everything)
+alt+f7(find usages)
+
+alt+szám navigálás pycharm ablakok között
+
+
+ctrl+shit+a (find action in pycharm)
+ctrl+n - find class OR ctrl+shift+alt+N find symbol (még több mindent keres)
+ctrl+b - find declaration
+
+f2 shit+f2 - code issues
+
+F3 bookmark
+File-okat favorite-elni
+
+ctrl+shift+t test
+
+
+https://www.jetbrains.com/help/pycharm/mastering-keyboard-shortcuts.html
+
+
+shift+f10 (ctrl+shift+f10 = run without manually creating a run configuration?)
+ctrl+f8 breakpoint
+
+ctrl+alt+s - settings
+Ctrl+Shift+A (Find Action, Find a command and execute it, open a tool window or search for a setting)
+
+ctrl+f(file) ctrl+shift+f(entire project) alt+f7 =(find usages)
+ctrl+shitf+n (search file)
+
+ctrl+f4 - close file
+ctrl+tab - switch files
+
+ctrl+j - live templates
+alt+enter - create function, generate import etc. -> settings-intentions
+ctrl+alt+m - message to method (in classes?) automatically
+ctrl+t - refactoring (https://www.youtube.com/watch?v=XOkNJxvNtPw)
+
+
+view - quick doc
+ls -l .idea
+
+
+
+
+
+
+
+
+
+git init
+git add .
+git commit -m "Started first project."
+git commit -am "Extended greeting."
+git checkout .
+
+git checkout master
+git checkout be017b
+
+
+git status
+git log
+git log --pretty=oneline
