@@ -36,5 +36,3 @@ print(first_user.login_attempts)
 
 first_user.reset_login_attempts()
 print(first_user.login_attempts)
-
-
