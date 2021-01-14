@@ -1,6 +1,6 @@
 from random import randint
 
-my_list = [2, 33, 44, 56, 7, 5, 34, 56, 54, 7, 'b', 'r', 't', 'a', 'e']
+my_list = [2, 33, 44, 7, 9, 5, 34, 56, 54, 243, 'b', 'r', 't', 'a', 'e']
 
 print("The winning combination:")
 for char in range(4):
