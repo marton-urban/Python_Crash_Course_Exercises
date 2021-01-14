@@ -28,11 +28,18 @@ class User:
         self.login_attempts = 0
 
 
-first_user = User('márton', 'urbán', 33, 'hungary', 'programming')
-first_user.increment_login_attempts(2)
-first_user.increment_login_attempts(3)
-first_user.increment_login_attempts(4)
-print(first_user.login_attempts)
+class Admin(User):
+    def __init__(self, first_name, last_name, age, country, hobby):
+        super().__init__(first_name, last_name, age, country, hobby)
+        self.privileges = []
 
-first_user.reset_login_attempts()
-print(first_user.login_attempts)
+    def show_privileges(self):
+        print(f"\n{self.first_name} {self.last_name}'s privileges:")
+        for privilege in self.privileges:
+            print(f"- {privilege}")
+
+
+main_admin = Admin('márton', 'urbán', 33, 'hungary', 'programming')
+main_admin.privileges = ['can add users', 'can ban users', 'can delete post']
+
+main_admin.show_privileges()
