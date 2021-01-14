@@ -17,5 +17,10 @@ class User:
             f"\nHobby: {self.hobby}"
         )
 
+    def greet_user(self):
+        print(f"\nWelcome to my program, dear {self.first_name}!")
+
+
 first_user = User('Márton', 'Urbán', 33, 'Hungary', 'Programming')
 User.describe_user(first_user)
+User.greet_user(first_user)
