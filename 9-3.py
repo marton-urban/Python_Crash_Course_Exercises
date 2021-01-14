@@ -3,10 +3,10 @@ class User:
 
     def __init__(self, first_name, last_name, age, country, hobby):
         self.hobby = hobby
-        self.country = country
+        self.country = country.title()
         self.age = age
-        self.first_name = first_name
-        self.last_name = last_name
+        self.first_name = first_name.title()
+        self.last_name = last_name.title()
 
     def describe_user(self):
         print(
@@ -21,6 +21,6 @@ class User:
         print(f"\nWelcome to my program, dear {self.first_name}!")
 
 
-first_user = User('Márton', 'Urbán', 33, 'Hungary', 'Programming')
+first_user = User('márton', 'urbán', 33, 'hungary', 'programming')
 User.describe_user(first_user)
 User.greet_user(first_user)
