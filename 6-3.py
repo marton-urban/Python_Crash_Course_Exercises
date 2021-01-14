@@ -1,0 +1,25 @@
+favorite_numbers = {
+    'mandy': 42,
+    'micah': 23,
+    'gus': 7,
+    'hank': 1000_000,
+    'maggie': 0,
+}
+
+for name, number in favorite_numbers.items():
+    print(f"{name.title()}'s favorite number is {number}.")
+
+num = favorite_numbers['mandy']
+print(f"Mandy's favorite number is {num}.")
+
+num = favorite_numbers['micah']
+print(f"Micah's favorite number is {num}.")
+
+num = favorite_numbers['gus']
+print(f"Gus's favorite number is {num}.")
+
+num = favorite_numbers['hank']
+print(f"Hank's favorite number is {num}.")
+
+num = favorite_numbers['maggie']
+print(f"Maggie's favorite number is {num}.")
