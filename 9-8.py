@@ -31,15 +31,20 @@ class User:
 class Admin(User):
     def __init__(self, first_name, last_name, age, country, hobby):
         super().__init__(first_name, last_name, age, country, hobby)
-        self.privileges = []
+        self.privileges = Privileges()
+
+
+class Privileges():
+    def __init__(self):
+        self.list_of_privileges = []
 
     def show_privileges(self):
-        print(f"\n{self.first_name} {self.last_name}'s privileges:")
-        for privilege in self.privileges:
+        print(f"\nPrivileges:")
+        for privilege in self.list_of_privileges:
             print(f"- {privilege}")
 
 
 main_admin = Admin('márton', 'urbán', 33, 'hungary', 'programming')
-main_admin.privileges = ['can add users', 'can ban users', 'can delete post']
+main_admin.privileges.list_of_privileges = ['can add users', 'can ban users', 'can delete post']
 
-main_admin.show_privileges()
+main_admin.privileges.show_privileges()
