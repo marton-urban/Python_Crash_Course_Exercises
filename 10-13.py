@@ -29,12 +29,9 @@ def greet_user():
         correct = input(f"Is '{username}' your username? (y/n) ")
         if correct == 'y':
             print(f"Welcome back, {username}!")
-        else:
-            username = get_new_username()
-            print(f"We'll remember you when you come back, {username}!")
-    else:
-        username = get_new_username()
-        print(f"We'll remember you when you come back, {username}!")
+            return
+    username = get_new_username()
+    print(f"We'll remember you when you come back, {username}!")
 
 
 greet_user()
