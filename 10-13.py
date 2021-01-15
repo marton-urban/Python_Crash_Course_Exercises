@@ -25,13 +25,18 @@ def get_new_username():
 def greet_user():
     """Greet the user by name."""
     username = get_stored_username()
-    if username:
-        correct = input(f"Is '{username}' your username? (y/n) ")
-        if correct == 'y':
-            print(f"Welcome back, {username}!")
-            return
+    is_correct = check_username(username)
+    if is_correct == 'y':
+        print(f"Welcome back, {username}!")
+        return
     username = get_new_username()
     print(f"We'll remember you when you come back, {username}!")
+
+
+def check_username(username):
+    if username:
+        is_correct = input(f"Is '{username}' your username? (y/n) ")
+        return is_correct
 
 
 greet_user()
