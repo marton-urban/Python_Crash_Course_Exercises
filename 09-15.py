@@ -1,31 +1,27 @@
-from random import randint
+from random import choice
 
-my_ticket = (33, 't', 7, 'a')
-counter = 0
-highest = 0
 
-while counter < 260000:
-    if counter > highest:
-        highest = counter
-        print(highest)
-    counter = 0
-    right_counter = 0
-    while right_counter != 4:
-        my_list = [2, 33, 44, 7, 9, 5, 34, 56, 54, 243, 'b', 'r', 't', 'a', 'e']
-        winning_ticket = []
-        counter += 1
-        right_counter = 0
-        for char in range(4):
-            length_of_list = len(my_list) - 1
-            current = my_list.pop(randint(0, length_of_list))
-            if current not in my_ticket:
-                break
-            else:
-                winning_ticket.append(current)
-                right_counter += 1
+class RandomSelect4:
+    """Pulls 4 cards from possibilities + checks my_ticket against winning_ticket"""
 
-print("Your ticket: ", end="")
-print(*my_ticket)
-print("The winning combination: ", end="")
-print(*winning_ticket)
-print(f"\n It took {counter} tries to win with your ticket.")
+    def randomize(self):
+        self.randomize = []
+        while len(self.randomize) < 4:
+            pulled_item = choice(possibilities)
+            if pulled_item not in self.randomize:
+                self.randomize.append(pulled_item)
+
+    def isnota(self, winning_ticket):
+        self.winning_ticket = winning_ticket
+
+
+possibilities = [2, 33, 44, 7, 9, 5, 34, 56, 54, 243, 'b', 'r', 't', 'a', 'e']
+my_ticket = RandomSelect4()
+winning_ticket = RandomSelect4()
+
+plays = 0
+won = False
+while not won:
+    my_ticket.randomize
+    winning_ticket.randomize
+    plays += 1
