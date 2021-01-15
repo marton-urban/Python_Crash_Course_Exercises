@@ -1,0 +1,4 @@
+In Python you can create classes which is great.
+In Python you can create methods inside the classes.
+In Python you can also create functions outside of a class.
+In Python everything is an object.
