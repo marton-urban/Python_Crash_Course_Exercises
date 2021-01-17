@@ -2,11 +2,10 @@ import sys
 import pygame
 
 
-class PygameBlueWindow:
+class GameCharacter:
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((1200, 700))
-        pygame.display.set_caption('Pygame Blue Window')
+        pygame.display.set_caption("Game Character")
 
     def run_game(self):
         while True:
@@ -14,9 +13,9 @@ class PygameBlueWindow:
                 if event.type == pygame.QUIT:
                     sys.exit()
 
-            self.screen.fill((0, 0, 255))
-            pygame.display.flip()
+                pygame.display.set_mode((1200, 700)).fill((255, 255, 255))
+                pygame.display.flip()
 
 
 if __name__ == '__main__':
-    PygameBlueWindow().run_game()
+    GameCharacter().run_game()
