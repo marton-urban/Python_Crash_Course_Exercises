@@ -1,9 +1,6 @@
 def make_car(manufacturer, model, **options):
     """Make a dictionary representing a car."""
-    options = {k:v for k,v in ([('manufacturer', manufacturer.title())] +
-                               [('model', model.title())] +
-                               list(options.items()))
-               }
+    options = {'manufacturer':manufacturer.title(), 'model':model.title(), **options}
 
     return options
 
